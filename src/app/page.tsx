@@ -53,7 +53,7 @@ export default function Home() {
               </button>
           </div>
           <div className="flex justify-end gap-5">
-              <div className='mt-8'>  
+              <div className=''>  
                   <button className='px-4 py-2 text-sm bg-white rounded-full font-bold text-zinc-800'> Ver planos Premium</button>
               </div>
               <div className='flex items-center gap-5'>
