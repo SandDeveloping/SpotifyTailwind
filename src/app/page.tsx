@@ -1,4 +1,4 @@
-import {Home as HomeIcon, Search, Library, Plus, MoveRight, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat, Mic2, LayoutList, Laptop2, Maximize2, Volume2 } from 'lucide-react'
+import {Home as HomeIcon, Search, Library, Plus, MoveRight, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat, Mic2, LayoutList, Laptop2, Maximize2, Volume2, Bell, Users } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
               <h1>Buscar</h1>
             </a>
           </nav>
-          <div className='w-92 h-[750px] bg-zinc-900 mt-2 rounded-lg'>
+          <div className='w-92 pb-4 bg-zinc-900 mt-2 rounded-lg'>
             <div className="flex justify-between">
             <a href="" className='flex items-center gap-4 text-zinc-400 font-bold p-5 hover:text-white'>
               <Library/>
@@ -43,14 +43,33 @@ export default function Home() {
           </div>
         </aside>
         <main className="bg-gradient-to-t from-zinc-900 via-zinc-900 to-[#222222] m-[7px] rounded-xl flex-1 p-6">
-          <div className='flex items-center gap-3'>
-            <button className='rounded-full bg-zinc-800 text-zinc-400 p-1'>
-              <ChevronLeft />
-            </button>
-            <button className='rounded-full bg-zinc-800 text-zinc-400 p-1'>
-              <ChevronRight />
-            </button>
+          <div className="flex justify-between"> 
+            <div className='flex items-center gap-3'>
+              <button className='rounded-full bg-zinc-800 text-zinc-400 p-1'>
+                  <ChevronLeft />
+              </button>
+              <button className='rounded-full bg-zinc-800 text-zinc-400 p-1'>
+                  <ChevronRight />
+              </button>
           </div>
+          <div className="flex justify-end gap-5">
+              <div className='mt-8'>  
+                  <button className='px-4 py-2 text-sm bg-white rounded-full font-bold text-zinc-800'> Ver planos Premium</button>
+              </div>
+              <div className='flex items-center gap-5'>
+                  <button className='rounded-full bg-zinc-800 text-zinc-400 p-1'>
+                      <Bell />
+                  </button>
+                  <button className='rounded-full bg-zinc-800 text-zinc-400 p-1'>
+                      <Users />
+                  </button>
+                  <button className='rounded-full bg-zinc-800 text-zinc-400 p-1'>
+                      <img src="./killua icon.png" alt=""  className='rounded-full w-6 h-6' />
+                  </button>
+              </div>
+          </div>
+      </div>
+
           <h1 className='font-bold text-2xl mt-5'>Experimente algo diferente.</h1>
           <div className="flex space-x-5">
             <div className="text-center p-5 mt-4 w-60 bg-[#141414] rounded-lg hover:bg-zinc-800">
